@@ -1,6 +1,8 @@
 # guess number
 import random
-r = random.randint(1,50)
+x = input('Please define the random upper limit:')
+x = int(x)
+r = random.randint(1,x)
 count = 0
 while True:
 	count = count + 1
@@ -13,3 +15,4 @@ while True:
 		print('it is too big,try again! This is', count, 'times')
 	elif x < r:
 		print('it is too small, try again! This is', count, 'times')
+
